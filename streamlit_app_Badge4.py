@@ -3,6 +3,7 @@ import streamlit
 streamlit.title('My Amazing Athletic Athleisure Catalog')
 
 import snowflake.connector
+cffi==1.15.0
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
