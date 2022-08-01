@@ -3,7 +3,7 @@ import streamlit
 streamlit.title('My Amazing Athletic Athleisure Catalog')
 
 import snowflake.connector
-role="accountadmin"
+
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
